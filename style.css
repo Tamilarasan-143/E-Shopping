@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navlogo {
+    margin-left: 30px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav-item a:hover {
+    color: cornflowerblue;
+}
+
+.carousel-item {
+    height: 600px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.carousel-item img {
+    height: 500px;
+    width: 50%;
+}
+
+#offers {
+    padding: 20px;
+    flex-direction: row;
+
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+}
+
+#offers img {
+    height: 30px;
+    width: 40px;
+    color: blue;
+}
+
+.text1 p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text1 h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.heading {
+    padding: 80px;
+    justify-content: space-between;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.heading h4 {
+    margin-top: 10px;
+    text-decoration: underline;
+
+}
+
+.heading h4:hover {
+    text-decoration: none;
+}
+
+.heading1 h4 {
+    margin-top: 10px;
+    text-decoration: underline;
+
+}
+
+.heading1 h4:hover {
+    text-decoration: none;
+}
+
+.mobileprice {
+    height: 20px;
+}
+
+.price1 {
+
+    min-height: auto;
+    margin-right: 30px;
+    margin-left: 30px;
+    gap: 80px;
+    margin-bottom: 200px;
+}
+
+.price1 h4,
+span {
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.price1 h4 {
+    justify-content: flex-start;
+}
+
+.price1 span {
+    color: darkred;
+    font-size: 15px;
+    justify-content: end;
+}
+
+.price1 h4:hover {
+    color: cornflowerblue;
+}
+
+.image {
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.addtocard {
+    position: absolute;
+    top: 80px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 2s;
+    box-shadow: 2px 2px 5px black;
+}
+
+.addtocard:hover {
+    opacity: 1;
+}
+
+.addtocard button {
+    margin-top: 300px;
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.addtocard button:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+
+.heading1 {
+    margin-bottom: 0px;
+    justify-content: space-between;
+    display: flex;
+    height: 90px;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.heading1 {
+
+    padding: 80px;
+    height: 200px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.card {
+    box-shadow: 2px 2px 5px black;
+}
+
+.card-group {
+    gap: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+#offers1 {
+    margin-top: 90px;
+    background-color: lightgrey;
+    height: 110vh;
+    padding: 20px;
+    position: relative;
+
+
+
+}
+
+#offers1 p {
+    font-size: 70px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 150px;
+
+}
+
+.btn {
+    position: absolute;
+    top: 500px;
+    right: 980px;
+    bottom: 500px;
+}
+
+.heading2 {
+
+    padding: 50px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#bluetooth .card {
+    box-shadow: none;
+    border: none;
+}
+
+.carousel-item1 p {
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 20px;
+}
+
+.carousel-item1 {
+    background-color: #fff;
+    color: black;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    margin-top: 50px;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    margin-top: 50px;
+}
+
+#mail {
+    background-color: black;
+    height: 200px;
+    margin-top: 80px;
+}
+
+.fa-solid {
+    color: cornflowerblue;
+}
+
+#tamil span {
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+#tamil {
+    height: 60px;
+    width: 300px;
+    margin-top: 100px;
+}
+
+#basic-addon1:hover {
+    background-color: black;
+}
+
+.insta-text {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#insta {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#insta .card {
+    box-shadow: 2px 2px 5px black;
+
+
+}
+
+.img2 {
+    height: 280px;
+    width: 200px;
+}
+
+.img3 {
+    height: 280px;
+    width: 200px;
+}
+
+.gram {
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.gram:hover {
+    top: 10%;
+    opacity: 1;
+}
+
+#insta img {
+    position: relative;
+
+}
+
+.fa-instagram {
+    font-size: 40px;
+    color: #fff;
+}
+
+.whatsapp {
+    margin-top: 30px;
+    display: flex;
+    height: 350px;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+
+}
+
+.twitter {
+    width: 25%;
+}
+
+.twitter h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.twitter h1:hover {
+    color: chocolate;
+}
+
+.para1 {
+    color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+.twitter p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.twitter p:hover {
+    color: cornflowerblue;
+}
+
+
+/* media query start */
+@media screen and (max-width:576px) {
+    .navbar {
+        width: 1000px;
+    }
+
+    .carousel {
+        width: 1000px;
+    }
+    
+
+    #offers {
+        margin-top: 50px;
+        width: 1000px;
+        padding: 10px 10px;
+
+    }
+
+    #offers h3,
+    img {
+        margin-left: 10px;
+    }
+
+    .heading {
+        margin-top: 50px;
+        width: 1000px;
+    }
+
+    .card-group {
+
+        display: flex;
+        width: 910px;
+    }
+    .heading1{
+        width: 1000px;
+    }
+    .card-group{
+        width:900px;
+    }
+    .price1 h4{
+        background-color: aqua;
+    }
+    #watchtext h4,span{
+        margin-left: 10px;
+    }
+    #offers1{
+        
+        width: 1000px;
+    }
+    #offers1 p{
+      margin-right: 800px;
+       }
+    
+    .col button{
+        margin-right: -200px;
+        margin-top:100px;
+       
+    }
+    #apple img{
+        margin-left: 200px;
+        margin-top: -580px;
+    }
+    #latest{
+    width: 1000px;
+    }
+    #bluetooth p,h5{
+        margin-left: 10px;
+    }
+    #mail{
+        width: 1000px;
+    }
+    .insta-text{
+        
+        width: 1000px;
+    }
+    
+    
+   
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* media query end */

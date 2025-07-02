@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniStore</title>
+    <link rel="icon" href="./security_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="display: flex; justify-content: space-between;">
+        <div class="container-fluid ">
+            <a style="font-family:'Times New Roman', Times, serif; font-size: 30px;" class="navbar-brand"
+                href="#">MiniStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav" style="margin-left:400px; gap: 30px;">
+                    <li class="nav-item">
+                        <a style="color:cornflowerblue;" class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUCT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">WATCHES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SALE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            PAGES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">ABOUT</a></li>
+                            <li><a class="dropdown-item" href="#">BLOG</a></li>
+                            <li><a class="dropdown-item" href="#">CART</a></li>
+                            <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+                            <li><a class="dropdown-item" href="#">SINGLE POST</a></li>
+                            <li><a class="dropdown-item" href="#">CONTACT</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navlogo">
+                    <img src="./search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <img src="./person_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                    <img src="./shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <!-- carousal start -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/banner-image.png" class="d-block" alt="...">
+                <div class="carousel-caption">
+
+                    <h1 style="font-size:50px; margin-bottom: 300px; margin-left: 250px; color: black;">YOUR PRODUCTS
+                        ARE GREAT</h1>
+                    <button
+                        style="color:#fff; background-color:crimson; width: 150px; height: 30px; border-radius: 50px; font-family: Arial, Helvetica, sans-serif;">SHOP
+                        PRODUCT</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/banner-image.png" class="d-block" alt="...">
+                <div class="carousel-caption">
+
+                    <h1 style="font-size: 50px; margin-bottom: 300px; margin-left: 250px; color: black;">YOUR PRODUCTS
+                        ARE GREAT</h1>
+                    <button
+                        style="color:#fff; background-color:crimson; width: 150px; height: 30px; font-family: Arial, Helvetica, sans-serif;">SHOP
+                        PRODUCT</button>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousal end -->
+
+    <!-- special offers start -->
+    <div class="copntainer-fluid" id="offers">
+        <div class="row">
+            <div class="col d-flex">
+                <div class="img1">
+                    <img src="./shopping_cart_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div class="text1">
+                    <h3>FREE DELIVERY</h3>
+                    <p>Consectetur adipi elit lorem ipsum dolor sit amet</p>
+                </div>
+
+            </div>
+            <div class="col d-flex">
+                <div class="img1"><img src="./workspace_premium_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div class="text1">
+                    <h3>QUALITY GURANTEE</h3>
+                    <p>Consectetur adipi elit lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="img1"><img src="./sell_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+                <div class="text1">
+                    <h3>DAILY OFFERS</h3>
+                    <p>Consectetur adipi elit lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="img1"><img src="./security_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg" alt=""></div>
+                <div class="text1">
+                    <h3>SECURE PAYMENT</h3>
+                    <p>Consectetur adipi elit lorem ipsum dolor sit amet</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- special offers end -->
+    <!-- product heading start -->
+    <div class="heading">
+        <h1 style="color: blue;font-size: 30px;">MOBILE PRODUCTS</h1>
+        <h4 style="font-size: 20px;">GO TO SHOP</h4>
+    </div>
+    <!-- product heading end -->
+
+    <!-- mobiles item start -->
+    <div class="card-group gap-5 ">
+        <div class="card" id="scroll1">
+            <div class="image">
+                <img src="./images/product-item1.jpg" class="card-img-top" alt="...">
+                <div class="addtocard">
+                    <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="card" id="scroll1">
+            <div class="image">
+                <img src="./images/product-item2.jpg" class="card-img-top" alt="...">
+                <div class="addtocard">
+                    <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card" id="scroll1">
+            <div class="image">
+                <img src="./images/product-item3.jpg" class="card-img-top" alt="...">
+                <div class="addtocard">
+                    <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="card" id="scroll1">
+            <div class="image">
+                <img src="./images/product-item4.jpg" class="card-img-top" alt="...">
+                <div class="addtocard">
+                    <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="mobileprice d-flex justify-content-evenly ">
+        <div class="price1 d-flex bg-secondary">
+            <h4>IPHONE10</h4>
+            <span>$980</span>
+
+        </div>
+
+        <div class="price1 d-flex">
+            <h4>IPHONE8</h4>
+            <span>$980</span>
+        </div>
+        <div class="price1 d-flex">
+            <h4>IPHONE11</h4>
+            <span>$980</span>
+        </div>
+        <div class="price1 d-flex">
+            <h4>IPHONE13</h4>
+            <span>$980</span>
+        </div>
+    </div>
+    <!-- mobiles item end -->
+    <!-- product2 start -->
+    <div class="heading1">
+        <h1 style="color: blue; font-size: 30px;">WATCH PRODUCTS</h1>
+        <h4 style="font-size: 20px;">GO TO SHOP</h4>
+    </div>
+    <!-- product2 end -->
+    <!-- watches items start -->
+    <div class="card-group" id="watches gap-5">
+        <div class="card">
+            <img src="./images/product-item6.jpg" class="card-img-top" alt="...">
+            <div class="addtocard">
+                <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+
+        </div>
+        <div class="card">
+            <img src="./images/product-item7.jpg" class="card-img-top" alt="...">
+            <div class="addtocard">
+                <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/product-item8.jpg" class="card-img-top" alt="...">
+            <div class="addtocard">
+                <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/product-item9.jpg" class="card-img-top" alt="...">
+            <div class="addtocard">
+                <button>ADD TO CARD <i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+        </div>
+    </div>
+    <div class="mobileprice d-flex justify-content-evenly ">
+        <div class="price1 d-flex" id="watchtext">
+            <h4>PINK WATCH</h4>
+            <span>$980</span>
+
+        </div>
+
+        <div class="price1 d-flex" id="watchtext">
+            <h4>HEAVY WATCH</h4>
+            <span>$980</span>
+        </div>
+        <div class="price1 d-flex" id="watchtext">
+            <h4>BLACK WATCH</h4>
+            <span>$980</span>
+        </div>
+        <div class="price1 d-flex" id="watchtext">
+            <h4>SPOT WATCH</h4>
+            <span>$980</span>
+        </div>
+    </div>
+    <!-- watches item end -->
+    <!-- offers start -->
+    <div class="container-fluid" id="offers1">
+        <div class="row">
+            <div class="col">
+                <p>10% <br> NEW YEAR <br>
+                    SALE</p>
+
+            </div>
+            <div class="col" id="apple">
+                <img src="./images/single-image1.png" alt="">
+                <button class="btn" style=" height:40px; width: 200px;color: #fff;background-color: black;">SHOP
+                    SALE</button>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- offers end -->
+    <!-- latest post start -->
+    <div class="heading2" id="latest">
+        <h1 style="color: blue; font-size: 30px;">LATEST POST</h1>
+        <P>READ BLOG</P>
+    </div>
+    <!-- latest post end -->
+    <!-- bluetooth start -->
+    <div class="card-group" id="bluetooth">
+        <div class="card">
+            <img src="./images/post-item1.jpg" class="card-img-top" alt="...">
+            <div>
+                <p>FEB-22,2023-GADGETS</p>
+                <h5>GET SOME COOL GATGETS IN 2023</h5>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="./images/post-item2.jpg" class="card-img-top" alt="...">
+            <div>
+                <p>FEB-25,2023-TECHNOLOGY</p>
+                <h5>GET SOME COOL GATGETS IN 2023</h5>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <img src="./images/post-item3.jpg" class="card-img-top" alt="...">
+            <div>
+                <p>FEB-22,2023-CAMERA</p>
+                <h5>GET SOME COOL GATGETS IN 2023</h5>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- bluetooth end -->
+    <!-- carousel start -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active"
+                style="height: 200px; text-align: center; justify-content: center;align-items: center;margin-top: 50px; background-color: #fff; color:black">
+                <p style="margin-top: 50px; font-size: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br> Aliquid dolor eveniet incidunt accusamus a in maiores vel aperiam est <br><i
+                        class="fa-solid fa-star-half-stroke"></i> <i class="fa-solid fa-star-half-stroke"></i> <i
+                        class="fa-solid fa-star-half-stroke"></i> <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <h5>EMMA CHAMBERLIN</h5>
+            </div>
+            <div class="carousel-item"
+                style="height: 200px; text-align: center; justify-content: center;align-items: center; margin-top: 50px;background-color: #fff;color: black;">
+                <p style="margin-top: 50px; font-size: 25px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    <br> Iure in, praesentium animi quas corrupti mollitia o itaque est delectus? <br> <i
+                        class="fa-solid fa-star-half-stroke"></i> <i class="fa-solid fa-star-half-stroke"></i> <i
+                        class="fa-solid fa-star-half-stroke"></i> <i class="fa-solid fa-star-half-stroke"></i>
+                </p>
+                <h5>EMMA CHAMBERLIN</h5>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- carousel end -->
+    <!-- mail start -->
+    <div class="container" id="mail">
+        <div class="row">
+            <div class="col">
+                <h1 style="color: #fff; margin-top: 30px;margin-left: 30px; text-align: center; margin-top: 70px; ">
+                    SUBSCRIBE US NOW</h1>
+                <p style="color: #fff;margin-bottom: 30px;margin-left: 30px;text-align: center; ">Get latest news,
+                    updates and deals directly mailed to your inbox.</p>
+            </div>
+            <div class="col" id="tamil">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Mail" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <span class="input-group-text" id="basic-addon1">SUBSCRIBE</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mail end -->
+    <!-- shop insta start -->
+    <h1 class="insta-text">SHOP OUR INSTA</h1>
+
+    <!-- shop insta end -->
+    <!-- insta card start -->
+    <div class="card-group" id="insta">
+        <div class="card">
+            <div class="div">
+                <img class="img3" src="./images/insta-item1.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="gram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+
+
+        </div>
+
+        <div class="card">
+            <div class="div">
+                <img class="img3" src="./images/insta-item2.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="gram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+            <div class="div">
+                <img class="img3" src="./images/insta-item3.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="gram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+            <div class="div">
+                <img class="img3" src="./images/insta-item4.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="gram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+
+
+        </div>
+
+        <div class="card">
+            <div class="div">
+                <img class="img3" src="./images/insta-item5.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="gram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- insta card end -->
+    <!-- footer start -->
+    <footer class="whatsapp">
+        <div>
+            <h1>MiniStore</h1>
+            <p class="para1">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Accusantium sunt <br>
+                laboriosam quaerat. Sint
+                <br>dolorum ipsa, aliquam dolore, assumenda <br> eaque deleniti consequatur soluta <br> necessitatibus
+                nam magnam
+                explicabo <br> maxime! Laudantium, quisquam earum.
+            </p>
+        </div>
+        <div class="twitter">
+            <h1>Quick Links</h1>
+            <p>Home</p>
+            <p>About</p>
+            <p>Shop</p>
+            <p>Blogs</p>
+            <p>Contact</p>
+
+        </div>
+        <div class="twitter">
+            <h1>Help&Info Help</h1>
+            <p>Track Your Order</p>
+            <p>Return Policies</p>
+            <p>Shipping+Delivery</p>
+            <p>ContactUs</p>
+            <p>FAQ's</p>
+        </div>
+        <div>
+            <h1>Contact Us</h1>
+            <p class="para1">Do you have any queries or suggestions? yourinfo@gmail.com</p>
+            <p class="para1">If you need support? Just give us a call. +55 111 222 333 44</p>
+
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
